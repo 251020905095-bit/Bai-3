@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng điểm sinh viên</title>
+</head>
+<body>
+    <form>
+
+        <p>
+            <label for="hoten"> Họ tên: </label>
+            <input type="text" id ="hoten" name="hoten" required="" placeholder="Họ tên">
+        </p>
+
+        <p>
+            <label for="email"> Email: </label>
+            <input type="email" id="email" name="email" required placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+        </p>
+
+        <p>
+            <label for="matkhau"> Mật khẩu: </label>
+            <input type="password" id="matkhau" name="matkhau" placeholder="Mật khẩu">
+        </p>
+
+        <fieldset>
+            <legend>Giới tính</legend>
+
+            <input type="radio" id="nam" name="gioitinh" value="nam">
+            <label for="nam">Nam</label>
+
+            <input type="radio" id="nu" name="gioitinh" value="nu">
+            <label for="nu">Nữ</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sở thích</legend>
+                
+            <input type="checkbox" id="choigame" name="sothich" value="choigame">
+            <label for="choigame">Chơi game</label><br>
+                
+            <input type="checkbox" id="nghenhac" name="sothich" value="nghenhac">
+            <label for="nghenhac">Nghe nhạc</label><br>
+                
+            <input type="checkbox" id="docsach" name="sothich" value="docsach">
+            <label for="docsach">Đọc sách</label><br>
+        </fieldset>
+
+        <p>
+        <label for="nganh"> Ngành học </label>
+        <select id="nganh" name="nganh">
+            <optgroup label="CNTT">
+                <option value="ktpm"> Kỹ thuật phần mềm </option>
+                <option value="khmt"> Khoa học máy tính </option>
+                <option value="attt"> An toàn thông tin </option>
+            </optgroup>
+            <optgroup label="Kinh Te">
+                <option value="kth"> Kinh tế học </option>
+                <option value="ktqt"> Kinh tế quốc tế </option>
+                <option value="ptkd"> Phân tích kinh doanh </option>
+            </optgroup>
+            <optgroup label="Điện tử">
+                <option value="dktdh"> Kỹ thuật Điều khiển và Tự động hóa </option>
+                <option value="ddt"> Kỹ thuật Điện | Điện tử </option>
+                <option value="dtvt"> Kỹ thuật Điện tử | Viễn thông </option>
+            </optgroup>
+        </select>
+        </p>
+
+        <p>
+        <label for="ghichu"> Ghi chú </label>
+        <textarea id="ghichu" name="ghichu" placeholder="Day la TextArea"></textarea>
+        </p>
+        
+        <p>
+        <input type="submit" value="Gửi thông tin" aria-label="Gửi thông tin đăng ký">
+        </p>
+
+    </form>
+</body>
